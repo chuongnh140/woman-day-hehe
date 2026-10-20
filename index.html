@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf5ee">
+  <meta name="description" content="Một món quà tinh thần gửi Ánh trước trong ngày 20/10. Ngày mai, anh sẽ gửi quà cho em. Mong hôm nay em vẫn mỉm cười thật xinh.">
+  <meta property="og:title" content="20/10 — Gửi Ánh, một chút dịu dàng">
+  <meta property="og:description" content="Ánh ơi, nhận chút niềm vui này trước nhé. Ngày mai, anh sẽ gửi quà cho em. ♡">
+  <meta property="og:type" content="website">
+  <title>Gửi Ánh, một chút dịu dàng · 20/10</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/photo-02.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="flower" viewBox="0 0 150 220"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M72 209c8-53-4-86 5-137M76 147c-33-2-43-25-43-25 28-6 39 11 43 25ZM76 167c28-5 40-29 40-29-32-2-38 19-40 29Z"/><path d="M77 76c-11 19-25 19-29 9-5-11 6-23 16-29-23 3-34-7-27-18 6-9 22-6 32 2C61 20 68 9 79 13c9 3 9 16 5 28 15-15 30-14 32-4 3 11-11 19-23 21 21 7 25 21 16 27-9 6-23-1-32-9Z"/><circle cx="79" cy="56" r="9"/><path d="M80 47v18m-9-9h17m-15-6 12 12m0-12L73 62"/></g></symbol>
+  </defs></svg>
+
+  <dialog id="welcome" class="welcome" aria-labelledby="welcome-title">
+    <div class="welcome-inner">
+      <p class="eyebrow">MỘT MÓN QUÀ NHỎ GỬI ÁNH · 20.10</p>
+      <div class="envelope-art" aria-hidden="true"><div class="envelope-letter"><span>dear, you.</span><svg><use href="#icon-heart"/></svg></div><div class="envelope-back"></div><div class="envelope-front"></div><div class="wax-seal">♡</div><span class="envelope-spark spark-one">✧</span><span class="envelope-spark spark-two">✧</span></div>
+      <h1 id="welcome-title">Một chút <em>dịu dàng</em>,<br>gửi riêng Ánh nhé.</h1>
+      <p>Hôm nay, nhận chút niềm vui này trước nhé.<br>Ngày mai, anh sẽ gửi quà cho em.</p>
+      <button class="button button-primary" id="open-gift">Mở món quà nhỏ <svg><use href="#icon-arrow"/></svg></button>
+      <button class="text-button welcome-quiet" id="open-quiet">Mở nhẹ thôi, không có nhạc</button>
+      <span class="welcome-note">ĐƯỢC GÓI BẰNG TẤT CẢ SỰ CHÂN THÀNH ♡</span>
+    </div>
+  </dialog>
+
+  <div id="site-content">
+    <header class="header page-width">
+      <a href="#home" class="wordmark" aria-label="Về đầu trang">dear, <em>you.</em><span>♡</span></a>
+      <nav aria-label="Điều hướng chính"><a href="#moments">Những khoảnh khắc</a><a href="#letter">Một lá thư</a></nav>
+      <button id="music-toggle" class="music-toggle" aria-pressed="false" aria-label="Bật nhạc piano"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="music-label">Bật chút nhạc</span></button>
+    </header>
+
+    <main>
+      <section class="hero page-width" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="little-line"></span> 20 THÁNG 10 · DÀNH RIÊNG ÁNH</p>
+          <h1 id="hero-title">Gửi Ánh,<br>một chút<br><em>dịu dàng.</em><svg class="title-heart" aria-hidden="true"><use href="#icon-heart"/></svg></h1>
+          <p class="hero-description">Hôm nay anh chưa thể gửi quà cho em.<br> Nên gửi trước món quà tinh thần này nhé.<br>Ngày mai anh gửi quà, hôm nay mong em vui.</p>
+          <a href="#letter" class="button button-primary">Có lời này, gửi em <svg><use href="#icon-arrow"/></svg></a>
+          <p class="hero-footnote">Chúc mừng ngày Phụ nữ Việt Nam <span>♡</span></p>
+        </div>
+        <div class="hero-art" aria-label="Bộ ảnh nhỏ dành cho em">
+          <span class="hero-date" aria-hidden="true">20.10</span>
+          <svg class="hero-flower flower-one" aria-hidden="true"><use href="#flower"/></svg>
+          <div class="photo-frame photo-main"><div class="tape"></div><img src="assets/photo-02.jpg" alt="Em trong chiếc váy trắng, một khoảnh khắc thật xinh" width="1261" height="1890" fetchpriority="high"><span>the prettiest kind of magic</span></div>
+          <div class="photo-frame photo-small"><img src="assets/photo-04.jpg" alt="Một góc dịu dàng trong chiếc váy nâu" width="1426" height="1893"><span>just you. ♡</span></div>
+          <span class="handwritten hero-handwriting">xinh theo cách của em</span>
+          <span class="hero-spark" aria-hidden="true">✧</span>
+          <div class="round-stamp" aria-hidden="true"><span>GỬI RIÊNG EM</span><svg><use href="#icon-heart"/></svg><span>WITH LOVE · 20/10</span></div>
+        </div>
+        <a class="scroll-note" href="#moments"><span>Vẫn còn điều dễ thương ở phía dưới</span><span aria-hidden="true">↓</span></a>
+      </section>
+
+      <div class="ribbon" aria-hidden="true"><div><span>MỘT NGÀY THẬT XINH</span><b>✳</b><span>DÀNH CHO MỘT NGƯỜI THẬT ĐẶC BIỆT</span><b>✳</b><span>HAPPY VIETNAMESE WOMEN’S DAY</span><b>✳</b><span>20.10</span><b>✳</b></div></div>
+
+      <section class="moments page-width section-space" id="moments" aria-labelledby="moments-title">
+        <div class="section-heading reveal"><div><p class="eyebrow">01 / NHỮNG ĐIỀU ANH MUỐN GIỮ</p><h2 id="moments-title">Một chút em.<br><em>Thật nhiều thương mến.</em></h2></div><p>Chẳng cần một dịp đặc biệt để thấy em xinh.<br>Nhưng hôm nay, anh có cớ để nói điều đó.</p></div>
+        <div class="gallery">
+          <button class="gallery-photo reveal" data-photo="0" aria-label="Xem ảnh 1: Nụ cười làm sáng một ngày"><span class="gallery-image"><img src="assets/photo-01.jpg" width="1261" height="1900" alt="Em cười rạng rỡ giữa những ánh đèn" loading="lazy"><span class="photo-expand" aria-hidden="true">↗</span></span><span class="photo-caption"><b>01</b> Một chút rạng rỡ</span></button>
+          <button class="gallery-photo reveal" data-photo="1" aria-label="Xem ảnh 2: Xinh theo cách riêng"><span class="gallery-image"><img src="assets/photo-02.jpg" width="1261" height="1890" alt="Em trong chiếc váy trắng" loading="lazy"><span class="photo-expand" aria-hidden="true">↗</span></span><span class="photo-caption"><b>02</b> Một chút cuốn hút</span></button>
+          <button class="gallery-photo reveal" data-photo="2" aria-label="Xem ảnh 3: Một khoảnh khắc dịu dàng"><span class="gallery-image"><img src="assets/photo-03.jpg" width="1072" height="1903" alt="Ảnh em chụp trước gương" loading="lazy"><span class="photo-expand" aria-hidden="true">↗</span></span><span class="photo-caption"><b>03</b> Một chút dịu dàng</span></button>
+          <button class="gallery-photo reveal" data-photo="3" aria-label="Xem ảnh 4: Bình yên là đây"><span class="gallery-image"><img src="assets/photo-04.jpg" width="1426" height="1893" alt="Em trong không gian quán cà phê ấm áp" loading="lazy"><span class="photo-expand" aria-hidden="true">↗</span></span><span class="photo-caption"><b>04</b> Một chút bình yên</span></button>
+          <button class="gallery-photo reveal" data-photo="4" aria-label="Xem ảnh 5: Vui theo cách của em"><span class="gallery-image"><img src="assets/photo-05.jpg" width="1300" height="1903" alt="Em cười và giơ tay hình chữ V" loading="lazy"><span class="photo-expand" aria-hidden="true">↗</span></span><span class="photo-caption"><b>05</b> Và thật nhiều đáng yêu</span></button>
+        </div>
+        <p class="gallery-hint">Chạm vào từng tấm hình để ngắm thêm một chút <span>↗</span></p>
+      </section>
+
+      <section class="letter-section section-space" id="letter" aria-labelledby="letter-title">
+        <div class="letter-layout page-width">
+          <div class="letter-intro reveal"><p class="eyebrow">02 / CÓ ĐÔI ĐIỀU MUỐN NÓI</p><h2 id="letter-title">Quà gửi sau,<br>lời thương <em>gửi trước.</em></h2><p>Hôm nay, anh gửi em một chút niềm vui.<br>Và vài lời thật lòng, chỉ dành riêng cho em.</p><svg class="letter-flower" aria-hidden="true"><use href="#flower"/></svg><span class="handwritten letter-sidenote">Một chút chân thành, gửi em trước nhé.</span></div>
+          <article class="letter-paper reveal"><span class="paper-date">20 tháng 10</span><span class="paper-heart" aria-hidden="true">♡</span><h3>Gửi Ánh,</h3><div class="letter-body"><p>Chúc Ánh một ngày 20/10 thật vui và thật nhiều yêu thương. Hôm nay anh chưa thể gửi quà cho em, nên anh làm góc nhỏ này để gửi em trước.</p><p>Coi đây là món quà tinh thần của anh nhé. Có chút nhạc để em nghe, vài tấm hình thật xinh của em, và những lời chúc anh muốn dành riêng cho em.</p><p>Ngày mai, anh sẽ gửi quà cho em. Anh mong em đừng buồn vì hôm nay chưa nhận được quà của anh nhé. Hy vọng món quà nhỏ này có thể mang đến cho em một chút niềm vui, và để em biết rằng anh vẫn nhớ, vẫn quan tâm đến em trong ngày đặc biệt này.</p><p>Anh mong em luôn được trân trọng, được yêu thương và có thật nhiều lý do để mỉm cười. Không chỉ hôm nay, mà cả những ngày bình thường sau nữa.</p></div><p class="letter-closing">Nhận chút dịu dàng này trước, Ánh nhé.</p><span class="handwritten signature">Từ một người đang nghĩ đến em ♡</span><div class="paper-bottom" aria-hidden="true">MỘT CHÚT CHÂN THÀNH, CHỈ GỬI RIÊNG EM</div></article>
+        </div>
+      </section>
+
+      <section class="wishes-section page-width section-space" aria-labelledby="wishes-title"><div class="wishes-header reveal"><p class="eyebrow">03 / HÔM NAY VÀ CẢ NHỮNG NGÀY SAU</p><h2 id="wishes-title">Mong em luôn có…</h2></div><div class="wishes-grid"><article class="wish reveal"><span class="wish-number">01</span><span class="wish-symbol" aria-hidden="true">✷</span><h3>Niềm vui bé xíu</h3><p>Một ly nước ngon, một bài nhạc hay,<br>một ngày có nhiều điều vừa ý.</p></article><article class="wish reveal"><span class="wish-number">02</span><span class="wish-symbol" aria-hidden="true">❀</span><h3>Những ngày nở hoa</h3><p>Đủ tự tin để theo điều em thích.<br>Đủ may mắn để gặp những điều lành.</p></article><article class="wish reveal"><span class="wish-number">03</span><svg class="wish-heart" aria-hidden="true"><use href="#icon-heart"/></svg><h3>Thật nhiều yêu thương</h3><p>Được quan tâm từ những điều nhỏ nhất.<br>Hôm nay, ngày mai, và thật lâu sau nữa.</p></article></div></section>
+
+      <section class="finale" aria-labelledby="finale-title"><div class="finale-content page-width reveal"><p class="eyebrow">MỘT CHÚT NIỀM VUI GỬI TRƯỚC</p><h2 id="finale-title">Hoa này anh gửi trước.<br><em>Để hôm nay em vẫn vui.</em></h2><p>Nhận bó hoa nhỏ trên màn hình này trước nhé.<br>Ngày mai, anh sẽ gửi quà cho em.</p><button class="button button-primary" id="receive-flowers">Nhận hoa của anh nhé <svg><use href="#icon-heart"/></svg></button><span class="handwritten finale-note">Mong chút chân thành này làm em mỉm cười.</span></div><svg class="finale-flower left" aria-hidden="true"><use href="#flower"/></svg><svg class="finale-flower right" aria-hidden="true"><use href="#flower"/></svg></section>
+    </main>
+    <footer class="footer page-width"><a href="#home" class="wordmark">dear, <em>you.</em><span>♡</span></a><p>Một góc nhỏ trên internet. Một chút chân thành gửi em.</p><span>20.10 · WITH LOVE</span></footer>
+  </div>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Xem ảnh"><button class="dialog-close" data-close="lightbox" aria-label="Đóng ảnh">×</button><button id="previous-photo" class="photo-nav previous" aria-label="Ảnh trước">←</button><figure><img id="lightbox-image" src="assets/photo-01.jpg" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button id="next-photo" class="photo-nav next" aria-label="Ảnh tiếp theo">→</button></dialog>
+  <dialog id="flower-dialog" class="flower-dialog" aria-labelledby="flower-title"><button class="dialog-close" data-close="flower-dialog" aria-label="Đóng bó hoa">×</button><div class="bouquet" aria-hidden="true"><svg class="bouquet-flower stem-one"><use href="#flower"/></svg><svg class="bouquet-flower stem-two"><use href="#flower"/></svg><svg class="bouquet-flower stem-three"><use href="#flower"/></svg><svg class="bouquet-flower stem-four"><use href="#flower"/></svg><svg class="bouquet-flower stem-five"><use href="#flower"/></svg><div class="bouquet-wrap"></div><span class="bouquet-ribbon">♡</span></div><p class="eyebrow">GỬI EM TRƯỚC MỘT CHÚT YÊU THƯƠNG</p><h2 id="flower-title">20/10 thật vui nhé,<br><em>Ánh xinh đẹp.</em></h2><p>Hôm nay, nhận bó hoa này trước nhé.<br>Ngày mai anh sẽ gửi quà cho em.<br>Mong em đừng buồn, cười một chút nha. ♡</p><button class="button button-primary" data-close="flower-dialog">Em nhận được rồi ♡</button></dialog>
+  <div id="petal-layer" aria-hidden="true"></div>
+  <audio id="background-music" src="assets/a-little-tenderness.wav" preload="none" loop></audio>
+  <noscript><style>.welcome{display:none}.reveal{opacity:1!important;transform:none!important}</style><p class="noscript-message">Bật JavaScript để mở quà, phát nhạc và xem ảnh lớn nhé. Em vẫn có thể đọc trọn lời chúc bên dưới. ♡</p></noscript>
+</body>
+</html>
